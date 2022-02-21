@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wrt.css">
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <h1>Are you ready for learning something new?</h1>
+    <h3>Have fun reading!</h3>
+    <nav class="top">
+        <span class="btn-grad">Home</span>
+        <span class="btn-grad2">Coding</span>
+        <span class="btn-grad3">Designing</span>
+    </nav>
+    <header>Carousel of images of projects</header>
+
+    <div class="container">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>What's new?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Web3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>AI and ML</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Short Stories</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Poems</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Other Articles</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>And many more!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let progress = document.getElementById('progressbar')
+        let totalHeight = document.body.scrollHeight - window.innerHeight
+        window.onscroll = function() {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100
+            progress.style.height = progressHeight + "%"
+        }
+    </script>
+
+</body>
+
+</html>
